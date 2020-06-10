@@ -7,7 +7,7 @@ import Detail from "./routes/Detail";
 
 function App() {
   return (
-  <HashRouter>
+  <HashRouter basename="/movie_app_2020">
     <Navigation />
     <Route path="/" exact={true} component={Home} />
     <Route path="/about" component={About} />

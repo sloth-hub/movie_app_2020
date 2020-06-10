@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #eff3f7;
+    height: 100%;
+}
+
+html, body, .detail_container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.detail_movies {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 50px;
+    padding-top: 70px;
+    width: 50%;
+}
+
+.detail_movies .detail_movie {
+    background-color: #fff;
+    margin-bottom: 70px;
+    font-weight: 300;
+    padding: 40px;
+    border-radius: 5px;
+    color: #adaeb9;
+    box-shadow: 0 13px 28px rgba(50, 50, 93, 0.25), 
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+    width: 100%;
+}
+
+.detail_movie {
+    text-decoration: none;
+    color: inherit;
+  }
+
+.detail_movie img {
+    position: relative;
+    max-width: 200px;
+    width: 100%;
+    margin-right: 30px;
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+      0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  }
+  .detail_movies .detail_movie .detail_movie_data {
+    margin-top: 30px;
+}
+  .detail_movie .detail_movie_title,
+  .detail_movie .detail_movie_year {
+    margin: 0;
+    font-weight: 300;
+  }
+  
+  .detail_movie .detail_movie_title {
+    margin-bottom: 5px;
+    font-size: 24px;
+    color: #2c2c2c;
+  }
+  
+  .detail_movie .detail_movie_genres {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 0px;
+  }
+
+  .detail_movie_rating {
+      position: relative;
+      left: 5px;
+  }
+  
+  .detail_movie_genres li,
+  .detail_movie .detail_movie_year {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  .detail_movie_stars_gray {
+    width: 90px;
+    overflow: hidden;
+  }
+  .detail_movie_stars_yellow {
+    position: absolute;
+    width: 90px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .detail_movie_stars_yellow i {
+      color: rgb(255, 218, 115);
+  }
